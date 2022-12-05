@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+:root {
+  --color-one: #F7F3E8;
+  --color-two: #9E755E;
+  --color-three: #776151;
+  --color-four: #F1ECDB;
+}
+
+.page-content {
+  width: 600px;
+  min-height: 100vh;
+  margin: auto;
+  background-color: var(--color-one);
+}
+
+.page-content .container-img-bg {
+  height: 17.5rem;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slick-slider.nav-tabs {
+  flex-wrap: nowrap;
+}
+
+.slick-slider.nav-tabs .nav-link {
+  padding: 0;
+  height: 64px;
+  width: 64px;
+  border-radius: 50%;
+}
+
+.slick-slider.nav-tabs .nav-link img {
+  border-radius: 50%;
+}
+
+.slick-slide .p{
+  color: var(--color-three);
+  margin-top: .5rem;
+}
+.slick-slider.nav-tabs .nav-link.active + p{
+  color: var(--color-two);
+}
+.logo {
+  width: 96px;
+  margin: auto;
+  height: 96px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  position: absolute;
+  top: -50px;
+  left: 265px;
+  margin-bottom: 2rem;
+}
+
+.logo img {
+  border-radius: 50%;
+}
+
+.container-box-tab {
+  background-color: var(--color-one);
+  position: relative;
+  padding-bottom: 2rem;
+}
+
+.slick-list.draggable {
+  width: 85%;
+  margin: auto;
+  direction: rtl;;
+}
+
+.slick-prev {
+  left: 10px;
+}
+
+.slick-next {
+  right: 15px;
+}
+
+[dir='rtl'] .slick-prev {
+  right: 5px;
+}
+
+[dir='rtl'] .slick-next {
+  left: 10px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: var(--color-two);
+  font-size: 25px;
+}
+
+.form-select {
+  background-color: transparent;
+  cursor: pointer;
+  width: fit-content;
+  color: var(--color-two);
+}
+
+.select-box {
+  padding-left: 1rem;
+}
+
+.bi-globe2::before {
+  color: var(--color-two) !important;
+}
+
+.form-select:focus {
+  box-shadow: none;
+}
+
+.box-icons i {
+  font-size: 1.2rem;
+  margin: 0 .5rem;
+  margin-bottom: 2.5rem;
+  color: var(--color-three);
+}
+
+/* .fa-snapchat-ghost:before,
+.fa-snapchat:before {
+  background: var(--color-three);
+  border-radius: 50%;
+  padding: 5px;
+}
+.fa-snapchat{
+  color: #fff;
+} */
+#myTabContent {
+  background-color: var(--color-four);
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  /* box-shadow: rgb(0 0 0 / 16%) 0px 4px 32px; */
+  min-height: 22vh;
+  padding-top: .8rem;
+}
+
+#myTabContent .toggle-tab {
+  width: fit-content;
+  height: 35px;
+  border: 1px solid #B3B3B3 !important;
+  border-radius: 25px;
+  padding: 0 !important;
+}
+
+#myTabContent .nav-tabs .nav-link {
+  border: none;
+  color: #B3B3B3;
+  height: 35px;
+  width: 35px;
+}
+
+#myTabContent .nav-link.active {
+  background-color: transparent;
+  border: 1px solid #000;
+  border-radius: 50%;
+  color: #000;
+}
+
+.line {
+  width: 2rem;
+  height: 0.125rem;
+  background-color: var(--color-three);
+  margin: auto;
+}
+
+.content-menu {
+  min-height: 70px;
+  color: #000;
+}
+a{
+  text-decoration: none;
+}
+
+.content-menu:hover {
+  color: #000;
+}
+
+.content-menu .img-menu {
+  height: 65px;
+  width: 65px;
+}
+
+.description-text {
+  font-size: .8rem;
+  color: var(--color-three);
+  display: flex;
+  align-items: center;
+}
+
+.bg-text {
+  padding: 2px 4px;
+  border-radius: 0.25rem;
+  background-color: var(--color-three);
+  color: var(--color-one);
+  width: fit-content;
+}
+
+.img-info {
+  width: 100%;
+  height: 370px;
+  margin-bottom: 1rem;
+}
+
+.img-info img {
+  border-radius: 12px;
+}
+
+div.content-menu .description-text {
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.kcal {
+  color: rgb(255, 255, 255);
+  border-color: rgb(179, 179, 179);
+  background-color: rgb(179, 179, 179);
+  font-size: 0.85rem;
+  padding: 2px 7px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+}
+
+.icon-page{
+  padding-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+.icon-page i {
+  color: var(--color-three);
+  font-size: 1rem;
+}
+
+.icon-page .fa-arrow-right {
+  height: 48px;
+  width: 56px;
+  border-radius: 30px;
+  color: #000;
+  border: 1px solid rgb(179, 179, 179);
+  background-color: rgb(247, 243, 232);
+}
