@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap');
 
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Cairo', sans-serif;
 }
 
 :root {
@@ -46,13 +46,15 @@ img {
   border-radius: 50%;
 }
 
-.slick-slide .p{
+.slick-slide p {
   color: var(--color-three);
   margin-top: .5rem;
 }
-.slick-slider.nav-tabs .nav-link.active + p{
+
+.slick-slider.nav-tabs .nav-link.active+p {
   color: var(--color-two);
 }
+
 .logo {
   width: 96px;
   margin: auto;
@@ -78,7 +80,8 @@ img {
 .slick-list.draggable {
   width: 85%;
   margin: auto;
-  direction: rtl;;
+  direction: rtl;
+  ;
 }
 
 .slick-prev {
@@ -180,7 +183,8 @@ img {
   min-height: 70px;
   color: #000;
 }
-a{
+
+a {
   text-decoration: none;
 }
 
@@ -189,8 +193,8 @@ a{
 }
 
 .content-menu .img-menu {
-  height: 65px;
-  width: 65px;
+  height: 75px;
+  width: 75px;
 }
 
 .description-text {
@@ -236,7 +240,7 @@ div.content-menu .description-text {
   width: fit-content;
 }
 
-.icon-page{
+.icon-page {
   padding-top: 4rem;
   margin-bottom: 2rem;
 }
@@ -253,4 +257,22 @@ div.content-menu .description-text {
   color: #000;
   border: 1px solid rgb(179, 179, 179);
   background-color: rgb(247, 243, 232);
+}
+
+.iconSvg {
+  height: 24px;
+  width: 24px;
+  margin-left: .5rem;
+}
+
+.content-menu:nth-child(odd) {
+  background-color: var(--color-one);
+}
+
+footer {
+  width: 600px;
+  background-color: var(--color-three);
+  color: var(--color-one);
+  margin: auto;
+  font-size: .9rem;
 }
