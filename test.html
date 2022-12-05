@@ -1,0 +1,29 @@
+
+<html>
+  <head>
+  
+  
+  <link href="./css/bootstrap.min.css" rel="stylesheet" >
+  
+  </head>
+  
+  <body>
+  
+  
+  <button type="button" id='tt' class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Tooltip title">
+    Tooltip
+  </button>
+  
+  
+  <script src="./js/bootstrap.bundle.min.js" ></script>
+  
+  <script src="./js/jQuery.js"></script>
+  
+  <script>
+  $(function () {
+   $('[data-toggle="tooltip"]').tooltip()
+    document.getElementById('tt').setAttribute('data-bs-original-title', 'New Tooltip Title');
+  })
+  </script>
+  </body>
+  </html>

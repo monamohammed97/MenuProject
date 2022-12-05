@@ -65,6 +65,7 @@ img {
   top: -50px;
   left: 265px;
   margin-bottom: 2rem;
+  cursor: pointer;
 }
 
 .logo img {
@@ -94,20 +95,23 @@ img {
 
 [dir='rtl'] .slick-prev {
   right: 10px;
-  
+
 }
 
 [dir='rtl'] .slick-next {
   left: 10px;
 }
-.slick-prev:before{
+
+.slick-prev:before {
   content: '\2039' !important;
   font-weight: bolder;
 }
-.slick-next:before{
+
+.slick-next:before {
   content: '\203A' !important;
   font-weight: bolder;
 }
+
 .slick-prev:before,
 .slick-next:before {
   color: var(--color-two);
@@ -140,7 +144,7 @@ img {
   color: var(--color-three);
 }
 
-.dropdown-toggle{
+.dropdown-toggle {
   background-color: transparent !important;
   color: var(--color-three) !important;
   border: none;
@@ -148,24 +152,31 @@ img {
   font-weight: bolder;
   margin-right: .5rem;
 }
-.dropdown-toggle:focus{
+
+.dropdown-toggle:focus {
   box-shadow: none !important;
 }
-.dropdown-toggle::after{
+
+.dropdown-toggle::after {
   margin-right: 1rem;
 }
-.dropdown-menu{
+
+.dropdown-menu {
   min-width: fit-content;
   border: none;
   background-color: var(--color-four);
 }
-.dropdown-menu .dropdown-item{
+
+.dropdown-menu .dropdown-item {
   text-align: start;
 }
-.dropdown-item:focus, .dropdown-item:hover{
+
+.dropdown-item:focus,
+.dropdown-item:hover {
   background-color: var(--color-three);
   color: var(--color-four);
 }
+
 /* .fa-snapchat-ghost:before,
 .fa-snapchat:before {
   background: var(--color-three);
@@ -297,6 +308,7 @@ div.content-menu .description-text {
 .iconSvg {
   height: 24px;
   width: 24px;
+  cursor: pointer;
   margin-left: .5rem;
 }
 
@@ -310,4 +322,25 @@ footer {
   color: var(--color-one);
   margin: auto;
   font-size: .9rem;
+  font-weight: bold;
+}
+
+.custom-tooltip {
+  --bs-tooltip-bg: #4f3e33;
+  opacity: 1;
+  font-size: .8rem;
+}
+
+.modal.show .modal-dialog {
+  margin-top: 5rem;
+}
+
+.modal-header {
+  border: none;
+  padding-bottom: 0;
+}
+
+.modal-content {
+  width: 80%;
+  margin: auto;
 }

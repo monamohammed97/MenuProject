@@ -36,18 +36,34 @@
         <p class="description-text mb-3 mt-2">بصل ، مشمش ، ملح ، زيت زيتون</p>
         <p class="bg-text fw-bolder">SAR 40.00</p>
         <div class="d-flex">
-          <div class="iconSvg"><img src="./images/icon1.svg" alt=""></div>
-          <div class="iconSvg"><img src="./images/icon2.svg" alt=""></div>
-          <div class="iconSvg"><img src="./images/icon3.svg" alt=""></div>
+          <div data-toggle="tooltip" data-placement="bottom" data-bs-custom-class="custom-tooltip" title="خالي من الجلوتين" class="iconSvg">
+            <img src="./images/icon1.svg" alt="">
+          </div>
+          <div data-toggle="tooltip" data-placement="bottom" data-bs-custom-class="custom-tooltip" title="صلصة الخردل" class="iconSvg">
+            <img src="./images/icon2.svg" alt="">
+          </div>
+          <div data-toggle="tooltip" data-placement="bottom" data-bs-custom-class="custom-tooltip" title="سمسم" class="iconSvg">
+            <img src="./images/icon3.svg" alt="">
+          </div>
+          <div data-toggle="tooltip" data-placement="bottom" data-bs-custom-class="custom-tooltip" title="القشريات" class="iconSvg">
+            <img src="./images/icon4.svg" alt="">
+          </div>
         </div>
       </div>
       <div class="img-info"><img src="./images/menuProfile.jpeg" alt=""></div>
     </div>
-    
+
   </main>
 
-  <script src="./js/script.js"></script>
+
   <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/jQuery.js"></script>
+  <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+      document.getElementById('tt').setAttribute('data-bs-original-title', 'New Tooltip Title');
+    })
+  </script>
 </body>
 
 </html>
