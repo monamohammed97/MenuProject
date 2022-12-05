@@ -93,17 +93,25 @@ img {
 }
 
 [dir='rtl'] .slick-prev {
-  right: 5px;
+  right: 10px;
+  
 }
 
 [dir='rtl'] .slick-next {
   left: 10px;
 }
-
+.slick-prev:before{
+  content: '\2039' !important;
+  font-weight: bolder;
+}
+.slick-next:before{
+  content: '\203A' !important;
+  font-weight: bolder;
+}
 .slick-prev:before,
 .slick-next:before {
   color: var(--color-two);
-  font-size: 25px;
+  font-size: 30px;
 }
 
 .form-select {
@@ -132,6 +140,32 @@ img {
   color: var(--color-three);
 }
 
+.dropdown-toggle{
+  background-color: transparent !important;
+  color: var(--color-three) !important;
+  border: none;
+  padding: 0 !important;
+  font-weight: bolder;
+  margin-right: .5rem;
+}
+.dropdown-toggle:focus{
+  box-shadow: none !important;
+}
+.dropdown-toggle::after{
+  margin-right: 1rem;
+}
+.dropdown-menu{
+  min-width: fit-content;
+  border: none;
+  background-color: var(--color-four);
+}
+.dropdown-menu .dropdown-item{
+  text-align: start;
+}
+.dropdown-item:focus, .dropdown-item:hover{
+  background-color: var(--color-three);
+  color: var(--color-four);
+}
 /* .fa-snapchat-ghost:before,
 .fa-snapchat:before {
   background: var(--color-three);
@@ -163,6 +197,7 @@ img {
   color: #B3B3B3;
   height: 35px;
   width: 35px;
+  margin: auto;
 }
 
 #myTabContent .nav-link.active {
