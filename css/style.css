@@ -102,6 +102,10 @@ img {
   left: 10px;
 }
 
+[dir='ltr'] .icon-page .fa-arrow-right {
+  transform: rotate(180deg);
+}
+
 .slick-prev:before {
   content: '\2039' !important;
   font-weight: bolder;
@@ -150,7 +154,7 @@ img {
   border: none;
   padding: 0 !important;
   font-weight: bolder;
-  margin-right: .5rem;
+  margin-inline-start: .5rem;
 }
 
 .dropdown-toggle:focus {
@@ -158,7 +162,7 @@ img {
 }
 
 .dropdown-toggle::after {
-  margin-right: 1rem;
+  margin-inline-start: 1rem;
 }
 
 .dropdown-menu {
@@ -309,7 +313,8 @@ div.content-menu .description-text {
   height: 24px;
   width: 24px;
   cursor: pointer;
-  margin-left: .5rem;
+  /* rtl */
+  margin-inline-end: .5rem;
 }
 
 .content-menu:nth-child(odd) {
