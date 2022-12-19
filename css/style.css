@@ -331,7 +331,7 @@ footer {
 }
 
 .custom-tooltip {
-  --bs-tooltip-bg: #4f3e33;
+  color: #4f3e33;
   opacity: 1;
   font-size: .8rem;
 }
@@ -348,4 +348,63 @@ footer {
 .modal-content {
   width: 80%;
   margin: auto;
+}
+
+
+
+/* loading */
+.looading {
+  height: 100vh;
+  background-color: var(--color-four);
+}
+
+.looading .box-one {
+  border-left: 2px solid var(--color-one);
+  width: 30%;
+}
+
+.looading .logo-first {
+  height: 100px;
+  width: auto;
+}
+
+.logo-first img {
+  object-fit: contain;
+}
+
+.btn-login:hover,
+.btn-login:focus,
+.btn-login:active,
+.btn-login {
+  width: 50%;
+  background: var(--color-three) !important;
+  height: 50px;
+  color: #fff;
+  font-weight: 800;
+  border-radius: 30px;
+  box-shadow: none;
+  border: none;
+}
+
+hr:not([size]) {
+  height: 0.1rem;
+  width: 40%;
+}
+
+.box-one .hide {
+  display: none;
+  background: #e5e1d4f5;
+}
+
+.hide .inner {
+  width: 50%;
+  background: var(--color-three);
+  padding: 1.5rem 0;
+  border-radius: 20px;
+}
+.hide .inner a, .inner hr{
+  color: #fff;
+}
+.hide hr{
+  width: 70%;
 }

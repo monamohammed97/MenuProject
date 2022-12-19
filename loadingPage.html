@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <!-- icon -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- end -->
+
+
+  <link rel="stylesheet" href="./css/rtl.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/media.css">
+</head>
+
+<body>
+
+  <section class="d-flex looading">
+    <div class="position-relative box-one d-flex justify-content-center align-items-center">
+      <div class="d-flex flex-column justify-content-center align-items-center w-100">
+        <div class="logo-first mb-3"><img src="./images/logo.jpeg" alt=""></div>
+        <h4 class="mb-5">وفاء اتشار</h4>
+        <button class="btn btn-login" id="login">انقر هنا للدخول</button>
+      </div>
+      <div id="hide"
+        class="hide position-absolute top-0 start-0 w-100 h-100 justify-content-center align-items-center">
+        <div class="inner d-flex flex-column justify-content-center align-items-center">
+          <a href="#">القائمة الأولى</a>
+          <hr>
+          <a href="#">القائمة الثانية</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="d-none d-lg-flex box-two flex-column justify-content-center align-items-center flex-grow-1">
+      <div class="logo-first mb-3"><img src="./images/logo.jpeg" alt=""></div>
+      <hr>
+      <h4 class="mb-5">وفاء اتشار</h4>
+    </div>
+  </section>
+
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/toggle.js"></script>
+</body>
+
+</html>
